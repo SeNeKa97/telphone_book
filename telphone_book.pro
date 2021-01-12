@@ -4,4 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        main.cpp \
+        phonebook.cpp \
+        phonebookio.cpp \
+        phonebookrecord.cpp
+
+HEADERS += \
+    phonebook.h \
+    phonebookio.h \
+    phonebookrecord.h
