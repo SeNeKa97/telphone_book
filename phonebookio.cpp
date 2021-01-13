@@ -75,6 +75,7 @@ int PhoneBookIO::writeRecords(const std::map<std::string, PhoneBookRecord> &reco
         ++currentRecord;
     }
 
+    output.close();
     return writeCount;
 }
 
