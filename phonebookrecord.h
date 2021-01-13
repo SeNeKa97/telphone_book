@@ -10,9 +10,10 @@ private:
     std::string m_firstName;
     std::string m_name;
     std::string m_address;
-    PhoneBookRecord();
+
 
 public:
+    PhoneBookRecord();
     PhoneBookRecord(std::string number,
                     std::string firstName,
                     std::string name,
