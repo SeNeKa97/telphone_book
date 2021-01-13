@@ -20,6 +20,9 @@ PhoneBookRecord::PhoneBookRecord(const PhoneBookRecord& record):
 
 
 PhoneBookRecord& PhoneBookRecord::operator=(const PhoneBookRecord &record){
+    if(this == &record)
+        return *this;
+
     m_number = record.m_number;
     m_firstName = record.m_firstName;
     m_name = record.m_name;
