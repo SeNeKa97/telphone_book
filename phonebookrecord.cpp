@@ -20,6 +20,9 @@ PhoneBookRecord::PhoneBookRecord(const PhoneBookRecord& record):
 
 
 PhoneBookRecord& PhoneBookRecord::operator=(const PhoneBookRecord &record){
+    if(this == &record)
+        return *this;
+
     m_number = record.m_number;
     m_firstName = record.m_firstName;
     m_name = record.m_name;
@@ -27,3 +30,18 @@ PhoneBookRecord& PhoneBookRecord::operator=(const PhoneBookRecord &record){
 
     return *this;
 }
+
+
+void PhoneBookRecord::setNumber(const std::string &number){  m_number = number;}
+std::string PhoneBookRecord::getNumber() const{  return m_number;}
+
+void PhoneBookRecord::setFirstName(const std::string &firstName){  m_firstName = firstName;}
+std::string PhoneBookRecord::getFirstName() const{  return m_firstName;}
+
+void PhoneBookRecord::setName(const std::string &name){  m_name = name;}
+std::string PhoneBookRecord::getName() const{  return m_name;}
+
+void PhoneBookRecord::setAddress(const std::string &address){  m_address = address;}
+std::string PhoneBookRecord::getAddress() const{  return m_address;}
+
+
