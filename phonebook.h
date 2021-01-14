@@ -19,6 +19,7 @@ public:
     PhoneBook();
     ~PhoneBook();
 
+    int init();
     size_t count() const;
     void printList() const;
     int edit(const std::string &originalNumber, PhoneBookRecord &record);
